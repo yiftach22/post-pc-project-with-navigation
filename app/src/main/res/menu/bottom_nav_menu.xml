@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/feedFragment"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:title="Feed" />
+    <item
+        android:id="@+id/listFragment2"
+        android:icon="@drawable/ic_baseline_explore_24"
+        android:title="Find" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Profile" />
+</menu>

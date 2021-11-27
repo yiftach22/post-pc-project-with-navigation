@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/fragmentFilter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FilterFragment">
+
+    <TextView
+        android:id="@+id/filterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Filter"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/resetSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"
+        />
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cancelButton" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="#aaaaaa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/applyButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/radiusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="10dp"
+        android:text="Radius (KM)"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterTitle" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:min="5"
+        android:progress="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiusTitle" />
+
+    <TextView
+        android:id="@+id/radiusValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="20"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/instrumentsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instruments"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiusValue"
+        android:textSize="20sp"
+        />
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/guitarCheckBox"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Guitar"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/instrumentsTitle"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/pianoCheckBox"-->
+<!--        tools:layout_editor_absoluteY="321dp"-->
+<!--        />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/pianoCheckBox"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Piano"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/guitarCheckBox"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/drumsCheckBox"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guitarCheckBox" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/drumsCheckBox"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Drums"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/pianoCheckBox"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/pianoCheckBox"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/pianoCheckBox" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/violinCheckBox"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Violin"-->
+<!--        app:layout_constraintStart_toStartOf="@id/guitarCheckBox"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/guitarCheckBox"-->
+<!--        android:layout_marginTop="8dp"/>-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/bassGuitarCheckBox"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Bass Guitar"-->
+<!--        app:layout_constraintStart_toStartOf="@id/pianoCheckBox"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/guitarCheckBox"-->
+<!--        android:layout_marginTop="8dp"/>-->
+
+    <TableLayout
+        android:id="@+id/instrumentsCheckboxTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/instrumentsTitle"
+        android:padding="10dp"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/guitarCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guitar" />
+
+            <CheckBox
+                android:id="@+id/pianoCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piano" />
+
+            <CheckBox
+                android:id="@+id/drumsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drums" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/violinCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Violin" />
+
+            <CheckBox
+                android:id="@+id/bassGuitarCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bass Guitar" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

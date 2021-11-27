@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1006580641606",
+    "project_id": "login-jemmit",
+    "storage_bucket": "login-jemmit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006580641606:android:816318e90a871f8e6f7f47",
+        "android_client_info": {
+          "package_name": "post.pc.y2021.jammit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006580641606-dlh2t4i5pkvps1u1bav9ha3f5s94r9r7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_C8_5NLYF0KhHtDpCb833NSXB6rFCp8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006580641606-dlh2t4i5pkvps1u1bav9ha3f5s94r9r7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
